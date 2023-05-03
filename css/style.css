@@ -1,0 +1,72 @@
+:root {
+  --black:#131316;
+  --white:#FFFFFF;
+  --gray:#D9D9D9;
+  --red:#FF0000;
+}
+
+body {
+  margin: auto;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: auto;
+  background: url(../img/backround.jpg);
+}
+.wrapper .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 620px;
+  margin: auto;
+  align-items: center;
+}
+.wrapper .header .header__logo {
+  background: url(../icons/logo.png);
+  width: 120px;
+  height: 60px;
+  margin-right: 320px;
+}
+.wrapper .header .button {
+  width: 180px;
+  height: 40px;
+  background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
+  border-radius: 4px;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.wrapper .tittle {
+  color: var(--gray);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.wrapper .goods__cards {
+  width: 620px;
+  height: 660px;
+  margin: auto;
+}
+.wrapper .goods__cards .cards__small {
+  background-color: var(--white);
+}
+.wrapper .goods__cards .cards__small .ship__img {
+  content: "";
+  background: url(../img/ship1.png);
+  width: 305px;
+  height: 136px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */
