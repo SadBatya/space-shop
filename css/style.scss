@@ -1,100 +1,225 @@
-
-
-:root{
-    --black:#131316;
-    --white:#FFFFFF;
-    --gray:#D9D9D9;
-    --red:#FF0000;
+:root {
+  --black: #131316;
+  --white: #ffffff;
+  --gray: #d9d9d9;
+  --red: #ff0000;
 }
 
-body{
-    margin: auto;
+
+body {
+  margin: auto;
 }
 
-.wrapper{
-    width: 1000px;
+.wrapper {
+  width: 1000px;
+  height: 1720px;
+  margin: auto;
+  background: url(../img/bg.png);
+  background-repeat: no-repeat;
+
+  .button {
+    width: 180px;
+    height: 40px;
+    background: linear-gradient(
+      87.23deg,
+      rgba(128, 26, 179, 0) -91.42%,
+      #4c4cff 99.79%
+    );
+    border-radius: 4px;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     margin: auto;
-    background: url(../img/backround.jpg);
+  }
 
-    .header{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 620px;
-        margin: auto;
-        align-items: center;
+  .tittle {
+    color: var(--gray);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
 
-        .header__logo{
-            background: url(../icons/logo.png);
-            width: 120px;
-            height: 60px;
-            margin-right: 320px;
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 620px;
+    margin: auto;
+    align-items: center;
+    padding-top: 20px;
+
+    .header__logo {
+      background: url(../icons/logo.png);
+      width: 120px;
+      height: 60px;
+      margin-right: 320px;
+    }
+  }
+
+  .goods {
+
+    .goods__cards {
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 620px;
+
+      .cards__small {
+        width: 200px;
+        height: 300px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        background-color: var(--white);
+        &:last-child{
+          margin-right: 0px;
         }
         
-        .button{
-            width: 180px;
-            height: 40px;
-            background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
-            border-radius: 4px;
-            color: var(--white);
+        .ship__img--ship{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 200px;
+          height: 150px;
+          background-repeat: no-repeat;
+        }
+
+        .ship__description{
+          font-family: 'Segoe UI';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: var(--black);
+          width: 180px;
+          height: 60px;
+          margin: auto;
+        }
+
+        .ship__price--item {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding-bottom: 10px;
+
+          .ship__price{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--black);
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+          }
+
+          .ship__price--sale {
+            display: flex;
+            text-decoration-line: line-through;
+            color: var(--gray);
+            font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 21px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
+          }
         }
-    }
+      }
 
-    .tittle{
-        color: var(--gray);
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
+      .cards__medium{
+        width: 305px;
+        height: 340px;
+        margin-right: 10px;
+        background-color: var(--white);
+        &:last-child{
+          margin-right: 0px;
+        }
+
+        .ship__img--ship{
+          width: 305px;
+          height: 180px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .ship__description{
+          width: 285px;
+          height: 60px;
+          text-align: center;
+          align-items: center;
+          margin: auto;
+        }
+
+        .ship__price{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          color: var(--black);
+          font-family: 'Segoe UI';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+
+        .mod{
+          width: 285px;
+        }
+      }
+
+      .mr-0{
+        margin-right: 0px;
+      }
+    }
+  }
+  .promo{
+    width: 620px;
+    height: 470px;
+    margin: auto;
+
+    .promo__info{
+      display: flex;
+      flex-direction: row;
+      
+      .promo__ship{
+        display: flex;
+        justify-content: center;
         align-items: center;
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
+        width: 305px;
+        height: 305px;
+      }
 
-    .goods__cards{
-        width: 620px;
-        height: 660px;
-        margin: auto;
-        .cards__small{
-           
-            background-color: var(--white);
+      .promo__description{
+        width: 295px;
+        height: 247px;
 
-            .ship__img{
-                content: '';
-                background: url(../img/ship1.png);
-                width: 305px;
-                height: 136px;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
+        .ship__raiting{
+          width: 172px;
 
-            .ship__description{
-
-            }
-
-            .ship__price{
-
-            }
-
+          .ship__raiting--item{
+            content: '';
+            background: url(../icons/icon--spaceship1.svg);
+            width: 28px;
+            height: 28px;
+          }
         }
-
-        .cards__medium{
-
-        }
-
-        .cards__big{
-
-        }
-    }
+      }
+    }  
+  }
 }
-
-

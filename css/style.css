@@ -1,8 +1,8 @@
 :root {
-  --black:#131316;
-  --white:#FFFFFF;
-  --gray:#D9D9D9;
-  --red:#FF0000;
+  --black: #131316;
+  --white: #ffffff;
+  --gray: #d9d9d9;
+  --red: #ff0000;
 }
 
 body {
@@ -11,27 +11,15 @@ body {
 
 .wrapper {
   width: 1000px;
+  height: 1720px;
   margin: auto;
-  background: url(../img/backround.jpg);
+  background: url(../img/bg.png);
+  background-repeat: no-repeat;
 }
-.wrapper .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 620px;
-  margin: auto;
-  align-items: center;
-}
-.wrapper .header .header__logo {
-  background: url(../icons/logo.png);
-  width: 120px;
-  height: 60px;
-  margin-right: 320px;
-}
-.wrapper .header .button {
+.wrapper .button {
   width: 180px;
   height: 40px;
-  background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
+  background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4c4cff 99.79%);
   border-radius: 4px;
   color: var(--white);
   font-weight: 400;
@@ -43,6 +31,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin: auto;
 }
 .wrapper .tittle {
   color: var(--gray);
@@ -54,19 +43,153 @@ body {
   margin-top: 50px;
   margin-bottom: 20px;
 }
-.wrapper .goods__cards {
+.wrapper .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 620px;
-  height: 660px;
   margin: auto;
+  align-items: center;
+  padding-top: 20px;
 }
-.wrapper .goods__cards .cards__small {
+.wrapper .header .header__logo {
+  background: url(../icons/logo.png);
+  width: 120px;
+  height: 60px;
+  margin-right: 320px;
+}
+.wrapper .goods .goods__cards {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 620px;
+}
+.wrapper .goods .goods__cards .cards__small {
+  width: 200px;
+  height: 300px;
+  margin-bottom: 10px;
+  margin-right: 10px;
   background-color: var(--white);
 }
-.wrapper .goods__cards .cards__small .ship__img {
-  content: "";
-  background: url(../img/ship1.png);
-  width: 305px;
-  height: 136px;
+.wrapper .goods .goods__cards .cards__small:last-child {
+  margin-right: 0px;
+}
+.wrapper .goods .goods__cards .cards__small .ship__img--ship {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 150px;
   background-repeat: no-repeat;
-  background-size: cover;
+}
+.wrapper .goods .goods__cards .cards__small .ship__description {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--black);
+  width: 180px;
+  height: 60px;
+  margin: auto;
+}
+.wrapper .goods .goods__cards .cards__small .ship__price--item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.wrapper .goods .goods__cards .cards__small .ship__price--item .ship__price {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--black);
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+}
+.wrapper .goods .goods__cards .cards__small .ship__price--item .ship__price--sale {
+  display: flex;
+  text-decoration-line: line-through;
+  color: var(--gray);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.wrapper .goods .goods__cards .cards__medium {
+  width: 305px;
+  height: 340px;
+  margin-right: 10px;
+  background-color: var(--white);
+}
+.wrapper .goods .goods__cards .cards__medium:last-child {
+  margin-right: 0px;
+}
+.wrapper .goods .goods__cards .cards__medium .ship__img--ship {
+  width: 305px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .goods .goods__cards .cards__medium .ship__description {
+  width: 285px;
+  height: 60px;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+.wrapper .goods .goods__cards .cards__medium .ship__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--black);
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.wrapper .goods .goods__cards .cards__medium .mod {
+  width: 285px;
+}
+.wrapper .goods .goods__cards .mr-0 {
+  margin-right: 0px;
+}
+.wrapper .promo {
+  width: 620px;
+  height: 470px;
+  margin: auto;
+}
+.wrapper .promo .promo__info {
+  display: flex;
+  flex-direction: row;
+}
+.wrapper .promo .promo__info .promo__ship {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 305px;
+  height: 305px;
+}
+.wrapper .promo .promo__info .promo__description {
+  width: 295px;
+  height: 247px;
+}
+.wrapper .promo .promo__info .promo__description .ship__raiting {
+  width: 172px;
+}
+.wrapper .promo .promo__info .promo__description .ship__raiting .ship__raiting--item {
+  content: "";
+  background: url(../icons/icon--spaceship1.svg);
+  width: 28px;
+  height: 28px;
 }/*# sourceMappingURL=style.css.map */
