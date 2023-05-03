@@ -13,7 +13,7 @@ body {
   width: 1000px;
   height: 1720px;
   margin: auto;
-  background: url(../img/bg.png);
+  background: url(../img/container2.png);
   background-repeat: no-repeat;
 }
 .wrapper .button {
@@ -32,6 +32,34 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: auto;
+}
+.wrapper .ship__price--item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.wrapper .ship__price--item .ship__price {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--black);
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+}
+.wrapper .ship__price--item .ship__price--sale {
+  display: flex;
+  text-decoration-line: line-through;
+  color: var(--gray);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin-right: 20px;
 }
 .wrapper .tittle {
   color: var(--gray);
@@ -96,33 +124,6 @@ body {
   height: 60px;
   margin: auto;
 }
-.wrapper .goods .goods__cards .cards__small .ship__price--item {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 10px;
-}
-.wrapper .goods .goods__cards .cards__small .ship__price--item .ship__price {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: var(--black);
-  font-family: "Segoe UI";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-}
-.wrapper .goods .goods__cards .cards__small .ship__price--item .ship__price--sale {
-  display: flex;
-  text-decoration-line: line-through;
-  color: var(--gray);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-}
 .wrapper .goods .goods__cards .cards__medium {
   width: 305px;
   height: 340px;
@@ -168,6 +169,34 @@ body {
   width: 620px;
   height: 470px;
   margin: auto;
+  background: var(--white);
+  border-radius: 4px;
+}
+.wrapper .promo .promo__button {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 280px;
+}
+.wrapper .promo .promo__button .promo__button--dot {
+  width: 280px;
+  height: 60px;
+  border: 1px dashed #131316;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--black);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.wrapper .promo .promo__button .button {
+  width: 280px;
+  height: 60px;
 }
 .wrapper .promo .promo__info {
   display: flex;
@@ -187,9 +216,68 @@ body {
 .wrapper .promo .promo__info .promo__description .ship__raiting {
   width: 172px;
 }
-.wrapper .promo .promo__info .promo__description .ship__raiting .ship__raiting--item {
-  content: "";
-  background: url(../icons/icon--spaceship1.svg);
-  width: 28px;
-  height: 28px;
+.wrapper .promo .promo__info .promo__description .ship__price--item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper .promo .promo__info .promo__description .ship__price--item .ship__prices--discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  width: 60px;
+  height: 24px;
+  color: var(--white);
+  background: var(--red);
+  border-radius: 4px;
+}
+.wrapper .promo .promo__info .promo__description .prices__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 240px;
+  height: 30px;
+}
+.wrapper .promo .promo__info .promo__description .prices__item .prices__name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+}
+.wrapper .promo .promo__info .promo__description .prices__item .prices__num {
+  font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+}
+.wrapper .promo .promo__info .promo__description .prices__item .prices__num--redbold {
+  color: var(--red);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+}
+.wrapper .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.wrapper .footer .footer__tittle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+}
+.wrapper .footer .footer__icons {
+  width: 232px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

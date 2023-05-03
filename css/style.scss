@@ -14,7 +14,7 @@ body {
   width: 1000px;
   height: 1720px;
   margin: auto;
-  background: url(../img/bg.png);
+  background: url(../img/container2.png);
   background-repeat: no-repeat;
 
   .button {
@@ -37,6 +37,37 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin: auto;
+  }
+
+  .ship__price--item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+
+    .ship__price{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: var(--black);
+      font-family: 'Segoe UI';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    .ship__price--sale {
+      display: flex;
+      text-decoration-line: line-through;
+      color: var(--gray);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      margin-right: 20px;
+    }
   }
 
   .tittle {
@@ -108,36 +139,6 @@ body {
           height: 60px;
           margin: auto;
         }
-
-        .ship__price--item {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          padding-bottom: 10px;
-
-          .ship__price{
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: var(--black);
-            font-family: 'Segoe UI';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 24px;
-          }
-
-          .ship__price--sale {
-            display: flex;
-            text-decoration-line: line-through;
-            color: var(--gray);
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 21px;
-          }
-        }
       }
 
       .cards__medium{
@@ -192,6 +193,37 @@ body {
     width: 620px;
     height: 470px;
     margin: auto;
+    background: var(--white);
+    border-radius: 4px;
+
+    .promo__button{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 280px;
+
+      .promo__button--dot{
+        width: 280px;
+        height: 60px;
+        border: 1px dashed #131316;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--black);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .button{
+        width: 280px;
+        height: 60px;
+      }
+    }
 
     .promo__info{
       display: flex;
@@ -211,15 +243,85 @@ body {
 
         .ship__raiting{
           width: 172px;
+        }
 
-          .ship__raiting--item{
-            content: '';
-            background: url(../icons/icon--spaceship1.svg);
-            width: 28px;
-            height: 28px;
+        .ship__price--item{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .ship__prices--discount{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            width: 60px;
+            height: 24px;
+            color: var(--white);
+            background:var(--red);
+            border-radius: 4px;
+          }
+        }
+
+        .prices__item{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 240px;
+          height: 30px;
+
+          .prices__name{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 17px;
+          }
+
+          .prices__num{
+            font-style: normal;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 13px;
+          }
+
+          .prices__num--redbold{
+            color: var(--red);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
           }
         }
       }
-    }  
+    }
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+
+    .footer__tittle{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: var(--white);
+    }
+
+    .footer__icons{
+      width: 232px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    
+    }
+
+    .footer__contacts{}
   }
 }
