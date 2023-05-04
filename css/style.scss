@@ -1,0 +1,427 @@
+:root {
+  --black: #131316;
+  --white: #ffffff;
+  --gray: #d9d9d9;
+  --red: #ff0000;
+}
+
+
+body {
+  margin: auto;
+}
+
+.wrapper {
+  width: 1000px;
+  height: 1720px;
+  margin: auto;
+  background: url(../img/container2.png);
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', sans-serif;
+
+  .ship__description{
+    width: 285px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .logo {
+    background: url(../icons/logo.png);
+    width: 120px;
+    height: 60px;
+    margin-right: 320px;
+  }
+
+  .button {
+    width: 180px;
+    height: 40px;
+    background: linear-gradient(
+      87.23deg,
+      rgba(128, 26, 179, 0) -91.42%,
+      #4c4cff 99.79%
+    );
+    border-radius: 4px;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: auto;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+      scale: 1.02;
+    }
+  }
+
+  .ship__price--item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 6px;
+    padding-top: 2px;
+    width: 240px;
+
+    .ship__price{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: var(--black);
+      font-family: 'Segoe UI';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+
+    }
+
+    .ship__price--sale {
+      display: flex;
+      text-decoration-line: line-through;
+      color: var(--gray);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      margin-right: 40px;
+    }
+
+    .mod-fz{
+      font-size: 16px;
+      margin-right: 17px;
+    }
+  }
+
+  .mod-head{
+    padding-bottom: 9px;
+    padding-top: 11px;
+    width: 202px;
+  }
+
+  .prices{
+    margin-top: 20px;
+  }
+
+  .tittle {
+    color: var(--gray);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    align-items: center;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+  
+  .mod__mr{
+    margin-top: 60px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 620px;
+    margin: auto;
+    align-items: center;
+    padding-top: 20px;
+
+    
+  }
+
+  .goods {
+
+    .goods__cards {
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 620px;
+
+      .cards__small {
+        width: 200px;
+        height: 308px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        background-color: var(--white);
+        &:last-child{
+          margin-right: 0px;
+        }
+        
+        .ship__img--ship{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 200px;
+          height: 150px;
+          background-repeat: no-repeat;
+        }
+
+        .ship__description{
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          align-items: center;
+          text-align: center;
+          color: var(--black);
+          width: 180px;
+          height: 60px;
+          margin: auto;
+        }
+      }
+
+      .cards__medium{
+        width: 305px;
+        height: 340px;
+        margin-right: 10px;
+        background-color: var(--white);
+        &:last-child{
+          margin-right: 0px;
+        }
+
+        .ship__img--ship{
+          width: 305px;
+          height: 180px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        
+
+        .ship__price{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          color: var(--black);
+          font-family: 'Segoe UI';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          margin-bottom: 10px;
+          margin-top: 10px;
+        }
+
+        .mod{
+          width: 285px;
+        }
+      }
+
+      .mr-0{
+        margin-right: 0px;
+      }
+    }
+  }
+  .promo{
+    width: 620px;
+    height: 470px;
+    margin: auto;
+    background: var(--white);
+    border-radius: 4px;
+
+    .promo__button{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 280px;
+
+      .promo__button--dot{
+        width: 280px;
+        height: 60px;
+        border: 1px dashed #131316;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--black);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover{
+          scale: 1.02;
+        }
+      }
+
+      .button{
+        width: 280px;
+        height: 60px;
+      }
+    }
+
+    .promo__info{
+      display: flex;
+      flex-direction: row;
+      
+      .promo__ship{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 305px;
+        height: 305px;
+      }
+
+      .promo__description{
+        width: 295px;
+        height: 247px;
+        margin-left: 10px;
+
+
+        .ship__raiting{
+          padding-top: 33px;
+          img{
+            margin-right: 4px;
+          }
+        }
+
+        .ship__name{
+          color: var(--black);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+        }
+
+        p{
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          margin-top: 8px;
+        }
+
+        .ship__price--item{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .ship__prices--discount{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            width: 60px;
+            height: 24px;
+            color: var(--white);
+            background:var(--red);
+            border-radius: 4px;
+          }
+        }
+
+        .prices__item{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 240px;
+          height: 25px;
+
+          .prices__name{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 17px;
+          }
+
+          .prices__num{
+            font-style: normal;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 13px;
+          }
+
+          .prices__num--redbold{
+            color: var(--red);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .footer__tittle{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      margin: auto;
+      color: var(--white);
+      margin-top: 60px;
+    }
+
+    .footer__icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 20px;
+
+      .facebook{
+        margin-right: 16px;
+        margin-left: 16px;
+      }
+    }
+
+    .footer__contacts{
+      display: flex;
+      margin: auto;
+      width: 640px;
+      margin-top: 27px;
+
+
+      .footer__contacts--inner{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+
+
+        .contacts__tittle{
+          color: rgba(255, 255, 255, 0.5);;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+        }
+
+        .contacts__number{
+          color: var(--gray);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          text-decoration: none;
+        }
+        .contacts__email{
+          color: var(--gray);
+          font-weight: 400;
+          font-size: 16px;
+          text-decoration-line: underline;
+        }
+      }
+      .logo{
+        margin-right: 0px;
+        margin-left: 340px;
+      }
+    }
+  }
+}
