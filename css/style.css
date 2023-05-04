@@ -15,6 +15,13 @@ body {
   margin: auto;
   background: url(../img/container2.png);
   background-repeat: no-repeat;
+  font-family: "Segoe UI", sans-serif;
+}
+.wrapper .logo {
+  background: url(../icons/logo.png);
+  width: 120px;
+  height: 60px;
+  margin-right: 320px;
 }
 .wrapper .button {
   width: 180px;
@@ -32,6 +39,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: auto;
+  font-family: "Segoe UI", sans-serif;
 }
 .wrapper .ship__price--item {
   display: flex;
@@ -79,12 +87,6 @@ body {
   margin: auto;
   align-items: center;
   padding-top: 20px;
-}
-.wrapper .header .header__logo {
-  background: url(../icons/logo.png);
-  width: 120px;
-  height: 60px;
-  margin-right: 320px;
 }
 .wrapper .goods .goods__cards {
   margin: auto;
@@ -215,6 +217,7 @@ body {
 }
 .wrapper .promo .promo__info .promo__description .ship__raiting {
   width: 172px;
+  padding-top: 27px;
 }
 .wrapper .promo .promo__info .promo__description .ship__price--item {
   display: flex;
@@ -262,22 +265,57 @@ body {
 }
 .wrapper .footer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  margin: auto;
+  flex-direction: column;
 }
 .wrapper .footer .footer__tittle {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  margin: auto;
   color: var(--white);
+  margin-top: 60px;
 }
 .wrapper .footer .footer__icons {
-  width: 232px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 20px;
+}
+.wrapper .footer .footer__icons .instagram {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+.wrapper .footer .footer__contacts {
+  display: flex;
+  margin: auto;
+  width: 640px;
+  margin-top: 27px;
+}
+.wrapper .footer .footer__contacts .footer__contacts--inner {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .footer .footer__contacts .footer__contacts--inner .contacts__tittle {
+  color: rgba(255, 255, 255, 0.5);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+}
+.wrapper .footer .footer__contacts .footer__contacts--inner .contacts__number {
+  color: var(--gray);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+}
+.wrapper .footer .footer__contacts .footer__contacts--inner .contacts__email {
+  color: var(--gray);
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration-line: underline;
+}
+.wrapper .footer .footer__contacts .logo {
+  margin-right: 0px;
+  margin-left: 360px;
 }/*# sourceMappingURL=style.css.map */
