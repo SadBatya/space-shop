@@ -17,6 +17,16 @@ body {
   background-repeat: no-repeat;
   font-family: "Segoe UI", sans-serif;
 }
+.wrapper .ship__description {
+  width: 285px;
+  height: 60px;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
 .wrapper .logo {
   background: url(../icons/logo.png);
   width: 120px;
@@ -39,7 +49,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: auto;
-  font-family: "Segoe UI", sans-serif;
 }
 .wrapper .ship__price--item {
   display: flex;
@@ -47,7 +56,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
+  padding-top: 2px;
+  width: 240px;
 }
 .wrapper .ship__price--item .ship__price {
   display: flex;
@@ -67,7 +78,19 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  margin-right: 20px;
+  margin-right: 40px;
+}
+.wrapper .ship__price--item .mod-fz {
+  font-size: 16px;
+  margin-right: 17px;
+}
+.wrapper .mod-head {
+  padding-bottom: 9px;
+  padding-top: 11px;
+  width: 202px;
+}
+.wrapper .prices {
+  margin-top: 20px;
 }
 .wrapper .tittle {
   color: var(--gray);
@@ -76,8 +99,11 @@ body {
   font-size: 32px;
   align-items: center;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 45px;
   margin-bottom: 20px;
+}
+.wrapper .mod__mr {
+  margin-top: 60px;
 }
 .wrapper .header {
   display: flex;
@@ -97,7 +123,7 @@ body {
 }
 .wrapper .goods .goods__cards .cards__small {
   width: 200px;
-  height: 300px;
+  height: 308px;
   margin-bottom: 10px;
   margin-right: 10px;
   background-color: var(--white);
@@ -114,11 +140,9 @@ body {
   background-repeat: no-repeat;
 }
 .wrapper .goods .goods__cards .cards__small .ship__description {
-  font-family: "Segoe UI";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  display: flex;
   align-items: center;
   text-align: center;
   color: var(--black);
@@ -142,13 +166,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-.wrapper .goods .goods__cards .cards__medium .ship__description {
-  width: 285px;
-  height: 60px;
-  text-align: center;
-  align-items: center;
-  margin: auto;
-}
 .wrapper .goods .goods__cards .cards__medium .ship__price {
   display: flex;
   justify-content: center;
@@ -160,6 +177,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 .wrapper .goods .goods__cards .cards__medium .mod {
   width: 285px;
@@ -214,10 +232,28 @@ body {
 .wrapper .promo .promo__info .promo__description {
   width: 295px;
   height: 247px;
+  margin-left: 10px;
 }
 .wrapper .promo .promo__info .promo__description .ship__raiting {
-  width: 172px;
-  padding-top: 27px;
+  padding-top: 33px;
+}
+.wrapper .promo .promo__info .promo__description .ship__raiting img {
+  margin-right: 4px;
+}
+.wrapper .promo .promo__info .promo__description .ship__name {
+  color: var(--black);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.wrapper .promo .promo__info .promo__description p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 8px;
 }
 .wrapper .promo .promo__info .promo__description .ship__price--item {
   display: flex;
@@ -243,7 +279,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 240px;
-  height: 30px;
+  height: 25px;
 }
 .wrapper .promo .promo__info .promo__description .prices__item .prices__name {
   font-style: normal;
@@ -282,7 +318,7 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
-.wrapper .footer .footer__icons .instagram {
+.wrapper .footer .footer__icons .facebook {
   margin-right: 16px;
   margin-left: 16px;
 }
@@ -295,6 +331,7 @@ body {
 .wrapper .footer .footer__contacts .footer__contacts--inner {
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
 }
 .wrapper .footer .footer__contacts .footer__contacts--inner .contacts__tittle {
   color: rgba(255, 255, 255, 0.5);
@@ -317,5 +354,5 @@ body {
 }
 .wrapper .footer .footer__contacts .logo {
   margin-right: 0px;
-  margin-left: 360px;
+  margin-left: 340px;
 }/*# sourceMappingURL=style.css.map */

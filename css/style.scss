@@ -18,6 +18,17 @@ body {
   background-repeat: no-repeat;
   font-family: 'Segoe UI', sans-serif;
 
+  .ship__description{
+    width: 285px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
   .logo {
     background: url(../icons/logo.png);
     width: 120px;
@@ -45,7 +56,6 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin: auto;
-    font-family: 'Segoe UI', sans-serif;
   }
 
   .ship__price--item {
@@ -54,7 +64,9 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 6px;
+    padding-top: 2px;
+    width: 240px;
 
     .ship__price{
       display: flex;
@@ -65,6 +77,7 @@ body {
       font-style: normal;
       font-weight: 700;
       font-size: 24px;
+
     }
 
     .ship__price--sale {
@@ -75,8 +88,23 @@ body {
       font-weight: 400;
       font-size: 16px;
       line-height: 21px;
-      margin-right: 20px;
+      margin-right: 40px;
     }
+
+    .mod-fz{
+      font-size: 16px;
+      margin-right: 17px;
+    }
+  }
+
+  .mod-head{
+    padding-bottom: 9px;
+    padding-top: 11px;
+    width: 202px;
+  }
+
+  .prices{
+    margin-top: 20px;
   }
 
   .tittle {
@@ -86,8 +114,12 @@ body {
     font-size: 32px;
     align-items: center;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 45px;
     margin-bottom: 20px;
+  }
+  
+  .mod__mr{
+    margin-top: 60px;
   }
 
   .header {
@@ -113,7 +145,7 @@ body {
 
       .cards__small {
         width: 200px;
-        height: 300px;
+        height: 308px;
         margin-bottom: 10px;
         margin-right: 10px;
         background-color: var(--white);
@@ -131,11 +163,9 @@ body {
         }
 
         .ship__description{
-          font-family: 'Segoe UI';
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
-          display: flex;
           align-items: center;
           text-align: center;
           color: var(--black);
@@ -162,13 +192,7 @@ body {
           align-items: center;
         }
 
-        .ship__description{
-          width: 285px;
-          height: 60px;
-          text-align: center;
-          align-items: center;
-          margin: auto;
-        }
+        
 
         .ship__price{
           display: flex;
@@ -181,6 +205,7 @@ body {
           font-weight: 700;
           font-size: 24px;
           margin-bottom: 10px;
+          margin-top: 10px;
         }
 
         .mod{
@@ -244,10 +269,31 @@ body {
       .promo__description{
         width: 295px;
         height: 247px;
+        margin-left: 10px;
+
 
         .ship__raiting{
-          width: 172px;
-          padding-top: 27px;
+          padding-top: 33px;
+          img{
+            margin-right: 4px;
+          }
+        }
+
+        .ship__name{
+          color: var(--black);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+        }
+
+        p{
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          margin-top: 8px;
         }
 
         .ship__price--item{
@@ -276,7 +322,7 @@ body {
           flex-direction: row;
           justify-content: space-between;
           width: 240px;
-          height: 30px;
+          height: 25px;
 
           .prices__name{
             font-style: normal;
@@ -322,7 +368,7 @@ body {
       justify-content: center;
       margin-top: 20px;
 
-      .instagram{
+      .facebook{
         margin-right: 16px;
         margin-left: 16px;
       }
@@ -338,6 +384,7 @@ body {
       .footer__contacts--inner{
         display: flex;
         flex-direction: column;
+        margin-left: 10px;
 
 
         .contacts__tittle{
@@ -363,7 +410,7 @@ body {
       }
       .logo{
         margin-right: 0px;
-        margin-left: 360px;
+        margin-left: 340px;
       }
     }
   }
